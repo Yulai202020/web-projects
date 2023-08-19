@@ -1,0 +1,331 @@
+[01/Oct/2021:15:39:25] ENGINE Bus STARTING
+[01/Oct/2021:15:39:25] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:15:39:26] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:15:39:26] ENGINE Bus STARTED
+[01/Oct/2021:15:40:56] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:15:40:56] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:15:40:56] ENGINE Bus STOPPING
+[01/Oct/2021:15:41:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.1.1.1', 1000)) shut down
+[01/Oct/2021:15:41:00] ENGINE Bus STOPPED
+[01/Oct/2021:15:41:00] ENGINE Bus EXITING
+[01/Oct/2021:15:41:00] ENGINE Waiting for child threads to terminate...
+[01/Oct/2021:15:41:00] ENGINE Bus EXITED
+[01/Oct/2021:15:41:00] ENGINE Re-spawning C:\Python38\python.exe C:\src\html\news\.py
+[01/Oct/2021:15:41:03] ENGINE Bus STARTING
+[01/Oct/2021:15:41:03] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:15:41:03] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:15:41:03] ENGINE Bus STARTED
+[01/Oct/2021:15:41:05] HTTP 
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Python38\lib\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "C:\Python38\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\src\html\news\.py", line 59, in homenews
+    with open("main/home.html","r") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'main/home.html'
+[01/Oct/2021:15:41:05] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.1.1.1:1000
+  CONNECTION: keep-alive
+  SEC-CH-UA: "Chromium";v="94", "Google Chrome";v="94", ";Not A Brand";v="99"
+  SEC-CH-UA-MOBILE: ?0
+  SEC-CH-UA-PLATFORM: "Windows"
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+  SEC-FETCH-SITE: none
+  SEC-FETCH-MODE: navigate
+  SEC-FETCH-USER: ?1
+  SEC-FETCH-DEST: document
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7
+[01/Oct/2021:15:42:18] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:15:42:18] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:15:42:18] ENGINE Bus STOPPING
+[01/Oct/2021:15:42:26] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.1.1.1', 1000)) shut down
+[01/Oct/2021:15:42:26] ENGINE Bus STOPPED
+[01/Oct/2021:15:42:26] ENGINE Bus EXITING
+[01/Oct/2021:15:42:26] ENGINE Waiting for child threads to terminate...
+[01/Oct/2021:15:42:26] ENGINE Bus EXITED
+[01/Oct/2021:15:42:26] ENGINE Re-spawning C:\Python38\python.exe C:\src\html\news\.py
+[01/Oct/2021:15:42:28] ENGINE Bus STARTING
+[01/Oct/2021:15:42:28] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:15:42:28] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:15:42:28] ENGINE Bus STARTED
+[01/Oct/2021:15:44:16] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:15:44:16] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:15:44:16] ENGINE Bus STOPPING
+[01/Oct/2021:15:44:19] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.1.1.1', 1000)) shut down
+[01/Oct/2021:15:44:19] ENGINE Bus STOPPED
+[01/Oct/2021:15:44:19] ENGINE Bus EXITING
+[01/Oct/2021:15:44:19] ENGINE Waiting for child threads to terminate...
+[01/Oct/2021:15:44:19] ENGINE Bus EXITED
+[01/Oct/2021:15:44:19] ENGINE Re-spawning C:\Python38\python.exe C:\src\html\news\.py
+[01/Oct/2021:15:44:22] ENGINE Bus STARTING
+[01/Oct/2021:15:44:22] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:15:44:22] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:15:44:22] ENGINE Bus STARTED
+[01/Oct/2021:15:46:55] HTTP 
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Python38\lib\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "C:\Python38\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\src\html\news\.py", line 40, in viewnewsone
+    newstext = ros[1]
+IndexError: list index out of range
+[01/Oct/2021:15:46:55] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.1.1.1:1000
+  CONNECTION: keep-alive
+  SEC-CH-UA: "Chromium";v="94", "Google Chrome";v="94", ";Not A Brand";v="99"
+  SEC-CH-UA-MOBILE: ?0
+  SEC-CH-UA-PLATFORM: "Windows"
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+  SEC-FETCH-SITE: same-origin
+  SEC-FETCH-MODE: navigate
+  SEC-FETCH-USER: ?1
+  SEC-FETCH-DEST: document
+  REFERER: http://127.1.1.1:1000/homenews?ID=0
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7
+[01/Oct/2021:15:49:14] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:15:49:14] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:15:49:14] ENGINE Bus STOPPING
+[01/Oct/2021:15:49:15] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.1.1.1', 1000)) shut down
+[01/Oct/2021:15:49:15] ENGINE Bus STOPPED
+[01/Oct/2021:15:49:15] ENGINE Bus EXITING
+[01/Oct/2021:15:49:15] ENGINE Waiting for child threads to terminate...
+[01/Oct/2021:15:49:15] ENGINE Bus EXITED
+[01/Oct/2021:15:49:15] ENGINE Re-spawning C:\Python38\python.exe C:\src\html\news\.py
+[01/Oct/2021:15:49:17] ENGINE Bus STARTING
+[01/Oct/2021:15:49:17] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:15:49:17] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:15:49:17] ENGINE Bus STARTED
+[01/Oct/2021:15:49:19] HTTP 
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Python38\lib\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "C:\Python38\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\src\html\news\.py", line 43, in viewnewsone
+    with open("sites/view.html","r") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'sites/view.html'
+[01/Oct/2021:15:49:19] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.1.1.1:1000
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  SEC-CH-UA: "Chromium";v="94", "Google Chrome";v="94", ";Not A Brand";v="99"
+  SEC-CH-UA-MOBILE: ?0
+  SEC-CH-UA-PLATFORM: "Windows"
+  UPGRADE-INSECURE-REQUESTS: 1
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+  SEC-FETCH-SITE: same-origin
+  SEC-FETCH-MODE: navigate
+  SEC-FETCH-USER: ?1
+  SEC-FETCH-DEST: document
+  REFERER: http://127.1.1.1:1000/homenews?ID=0
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7
+[01/Oct/2021:15:49:32] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:15:49:32] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:15:49:32] ENGINE Bus STOPPING
+[01/Oct/2021:15:49:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.1.1.1', 1000)) shut down
+[01/Oct/2021:15:49:39] ENGINE Bus STOPPED
+[01/Oct/2021:15:49:39] ENGINE Bus EXITING
+[01/Oct/2021:15:49:39] ENGINE Waiting for child threads to terminate...
+[01/Oct/2021:15:49:39] ENGINE Bus EXITED
+[01/Oct/2021:15:49:39] ENGINE Re-spawning C:\Python38\python.exe C:\src\html\news\.py
+[01/Oct/2021:15:49:42] ENGINE Bus STARTING
+[01/Oct/2021:15:49:42] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:15:49:43] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:15:49:43] ENGINE Bus STARTED
+[01/Oct/2021:15:50:36] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:15:50:36] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:15:50:36] ENGINE Bus STOPPING
+[01/Oct/2021:15:50:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.1.1.1', 1000)) shut down
+[01/Oct/2021:15:50:39] ENGINE Bus STOPPED
+[01/Oct/2021:15:50:39] ENGINE Bus EXITING
+[01/Oct/2021:15:50:39] ENGINE Waiting for child threads to terminate...
+[01/Oct/2021:15:50:39] ENGINE Bus EXITED
+[01/Oct/2021:15:50:39] ENGINE Re-spawning C:\Python38\python.exe C:\src\html\news\.py
+[01/Oct/2021:15:50:41] ENGINE Bus STARTING
+[01/Oct/2021:15:50:41] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:15:50:41] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:15:50:41] ENGINE Bus STARTED
+[01/Oct/2021:15:54:06] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:15:54:06] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:15:54:06] ENGINE Bus STOPPING
+[01/Oct/2021:15:54:09] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.1.1.1', 1000)) shut down
+[01/Oct/2021:15:54:09] ENGINE Bus STOPPED
+[01/Oct/2021:15:54:09] ENGINE Bus EXITING
+[01/Oct/2021:15:54:09] ENGINE Waiting for child threads to terminate...
+[01/Oct/2021:15:54:09] ENGINE Bus EXITED
+[01/Oct/2021:15:54:09] ENGINE Re-spawning C:\Python38\python.exe C:\src\html\news\.py
+[01/Oct/2021:15:54:11] ENGINE Bus STARTING
+[01/Oct/2021:15:54:11] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:15:54:11] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:15:54:11] ENGINE Bus STARTED
+[01/Oct/2021:15:54:53] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:15:54:53] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:15:54:53] ENGINE Bus STOPPING
+[01/Oct/2021:15:55:02] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.1.1.1', 1000)) shut down
+[01/Oct/2021:15:55:02] ENGINE Bus STOPPED
+[01/Oct/2021:15:55:02] ENGINE Bus EXITING
+[01/Oct/2021:15:55:02] ENGINE Waiting for child threads to terminate...
+[01/Oct/2021:15:55:02] ENGINE Bus EXITED
+[01/Oct/2021:15:55:02] ENGINE Re-spawning C:\Python38\python.exe C:\src\html\news\.py
+[01/Oct/2021:15:55:04] ENGINE Bus STARTING
+[01/Oct/2021:15:55:04] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:15:55:04] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:15:55:04] ENGINE Bus STARTED
+[01/Oct/2021:15:55:30] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:15:55:30] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:15:55:30] ENGINE Bus STOPPING
+[01/Oct/2021:15:55:31] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.1.1.1', 1000)) shut down
+[01/Oct/2021:15:55:31] ENGINE Bus STOPPED
+[01/Oct/2021:15:55:31] ENGINE Bus EXITING
+[01/Oct/2021:15:55:31] ENGINE Waiting for child threads to terminate...
+[01/Oct/2021:15:55:31] ENGINE Bus EXITED
+[01/Oct/2021:15:55:31] ENGINE Re-spawning C:\Python38\python.exe C:\src\html\news\.py
+[01/Oct/2021:15:55:37] ENGINE Bus STARTING
+[01/Oct/2021:15:55:37] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:15:55:37] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:15:55:37] ENGINE Bus STARTED
+[01/Oct/2021:17:17:24] ENGINE Bus STARTING
+[01/Oct/2021:17:17:24] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:17:17:24] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:17:17:24] ENGINE Bus STARTED
+[01/Oct/2021:17:17:39] HTTP 
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\cherrypy\_cprequest.py", line 638, in respond
+    self._do_respond(path_info)
+  File "C:\Python38\lib\site-packages\cherrypy\_cprequest.py", line 697, in _do_respond
+    response.body = self.handler()
+  File "C:\Python38\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\src\html\news\.py", line 79, in write
+    conn.executescript("insert into News values ('{0}','{1}')".format(sub,text))
+sqlite3.OperationalError: table News has 3 columns but 2 values were supplied
+[01/Oct/2021:17:17:39] HTTP 
+Request Headers:
+  Remote-Addr: 127.0.0.1
+  HOST: 127.1.1.1:1000
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  SEC-CH-UA: "Chromium";v="94", "Google Chrome";v="94", ";Not A Brand";v="99"
+  SEC-CH-UA-MOBILE: ?0
+  SEC-CH-UA-PLATFORM: "Windows"
+  UPGRADE-INSECURE-REQUESTS: 1
+  ORIGIN: http://127.1.1.1:1000
+  USER-AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+  SEC-FETCH-SITE: same-origin
+  SEC-FETCH-MODE: navigate
+  SEC-FETCH-USER: ?1
+  SEC-FETCH-DEST: document
+  REFERER: http://127.1.1.1:1000/uploadnews?ID=0
+  ACCEPT-ENCODING: gzip, deflate, br
+  ACCEPT-LANGUAGE: en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7
+  Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryzEozXOGKVTX6GJRb
+  Content-Length: 344
+[01/Oct/2021:17:18:19] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:17:18:19] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:17:18:19] ENGINE Bus STOPPING
+[01/Oct/2021:17:18:29] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.1.1.1', 1000)) shut down
+[01/Oct/2021:17:18:29] ENGINE Bus STOPPED
+[01/Oct/2021:17:18:29] ENGINE Bus EXITING
+[01/Oct/2021:17:18:29] ENGINE Waiting for child threads to terminate...
+[01/Oct/2021:17:18:29] ENGINE Bus EXITED
+[01/Oct/2021:17:18:29] ENGINE Re-spawning C:\Python38\python.exe C:\src\html\news\.py
+[01/Oct/2021:17:18:31] ENGINE Bus STARTING
+[01/Oct/2021:17:18:31] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:17:18:31] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:17:18:31] ENGINE Bus STARTED
+[01/Oct/2021:17:18:39] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:17:18:39] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:17:18:39] ENGINE Bus STOPPING
+[01/Oct/2021:17:18:42] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.1.1.1', 1000)) shut down
+[01/Oct/2021:17:18:42] ENGINE Bus STOPPED
+[01/Oct/2021:17:18:42] ENGINE Bus EXITING
+[01/Oct/2021:17:18:42] ENGINE Waiting for child threads to terminate...
+[01/Oct/2021:17:18:42] ENGINE Bus EXITED
+[01/Oct/2021:17:18:42] ENGINE Re-spawning C:\Python38\python.exe C:\src\html\news\.py
+[01/Oct/2021:17:18:43] ENGINE Bus STARTING
+[01/Oct/2021:17:18:43] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:17:18:43] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:17:18:43] ENGINE Bus STARTED
+[01/Oct/2021:17:19:29] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:17:19:29] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:17:19:29] ENGINE Bus STOPPING
+[01/Oct/2021:17:19:31] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.1.1.1', 1000)) shut down
+[01/Oct/2021:17:19:31] ENGINE Bus STOPPED
+[01/Oct/2021:17:19:31] ENGINE Bus EXITING
+[01/Oct/2021:17:19:31] ENGINE Waiting for child threads to terminate...
+[01/Oct/2021:17:19:31] ENGINE Bus EXITED
+[01/Oct/2021:17:19:31] ENGINE Re-spawning C:\Python38\python.exe C:\src\html\news\.py
+[01/Oct/2021:17:19:32] ENGINE Bus STARTING
+[01/Oct/2021:17:19:32] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:17:19:33] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:17:19:33] ENGINE Bus STARTED
+[01/Oct/2021:18:19:07] ENGINE Bus STARTING
+[01/Oct/2021:18:19:07] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:18:19:08] ENGINE Serving on http://127.1.1.1:1000
+[01/Oct/2021:18:19:08] ENGINE Bus STARTED
+[01/Oct/2021:18:40:56] ENGINE Restarting because C:\src\html\news\.py changed.
+[01/Oct/2021:18:40:56] ENGINE Stopped thread 'Autoreloader'.
+[01/Oct/2021:18:40:56] ENGINE Bus STOPPING
+[01/Oct/2021:18:41:47] ENGINE Bus STARTING
+[01/Oct/2021:18:41:47] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:18:41:48] ENGINE Serving on http://127.9.9.9:9999
+[01/Oct/2021:18:41:48] ENGINE Bus STARTED
+[01/Oct/2021:19:57:55] ENGINE Bus STARTING
+[01/Oct/2021:19:57:55] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:19:57:55] ENGINE Serving on http://127.9.9.9:9999
+[01/Oct/2021:19:57:55] ENGINE Bus STARTED
+[01/Oct/2021:19:58:21] ENGINE Bus STARTING
+[01/Oct/2021:19:58:21] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:19:58:21] ENGINE Serving on http://127.9.9.9:9999
+[01/Oct/2021:19:58:21] ENGINE Bus STARTED
+[01/Oct/2021:20:07:44] ENGINE Bus STARTING
+[01/Oct/2021:20:07:44] ENGINE Started monitor thread 'Autoreloader'.
+[01/Oct/2021:20:07:44] ENGINE Serving on http://127.9.9.9:9999
+[01/Oct/2021:20:07:44] ENGINE Bus STARTED
+[02/Oct/2021:09:48:14] ENGINE Bus STARTING
+[02/Oct/2021:09:48:14] ENGINE Started monitor thread 'Autoreloader'.
+[02/Oct/2021:09:48:14] ENGINE Serving on http://127.9.9.9:9999
+[02/Oct/2021:09:48:14] ENGINE Bus STARTED
+[02/Oct/2021:13:14:42] ENGINE Bus STARTING
+[02/Oct/2021:13:14:42] ENGINE Started monitor thread 'Autoreloader'.
+[02/Oct/2021:13:14:42] ENGINE Serving on http://127.9.9.9:9999
+[02/Oct/2021:13:14:42] ENGINE Bus STARTED
+[03/Oct/2021:07:06:09] ENGINE Bus STARTING
+[03/Oct/2021:07:06:09] ENGINE Started monitor thread 'Autoreloader'.
+[03/Oct/2021:07:06:10] ENGINE Serving on http://127.9.9.9:9999
+[03/Oct/2021:07:06:10] ENGINE Bus STARTED
+[03/Oct/2021:16:49:52] ENGINE Bus STARTING
+[03/Oct/2021:16:49:52] ENGINE Started monitor thread 'Autoreloader'.
+[03/Oct/2021:16:49:52] ENGINE Serving on http://127.9.9.9:9999
+[03/Oct/2021:16:49:52] ENGINE Bus STARTED

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEGames Anonim Sender</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>nav>ul>li>a {text-decoration: none;color: white;}nav>ul>li>a:hover {text-decoration: none;color: orange;}nav>ul>li>a.active {text-decoration: none;color: red;}.nav-link.active {text-decoration: none;color: red;}nav>ul>li {list-style: none;}nav {background-color: black;padding-top: 10px;}body {background-color: white;overflow-x: hidden;overflow-y: auto;}</style>
+</head>
+<body>
+    <a href="/home?ID={{ID}}">Home</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <p> Your ID {{ID}}</p>
+    <table class="table table-striped table-hover">
+        <tr>
+            <td>To</td>
+            <td>{{row[0]}}</td>
+        </tr>
+        <tr>
+            <td>Message</td>
+            <td>{{row[1]}}</td>
+        </tr>
+        <tr>
+            <td>From</td>
+            <td>{{row[2]}}</td>
+        </tr>
+    </table>
+</body>
+</html>

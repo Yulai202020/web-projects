@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylecss">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>SEGames Anonim Platform</title>
+</head>
+<body>
+    <nav class="mb-4 d-flex justify-content-between">
+        <ul class="d-flex align-items-center">
+            <li><a href="/videos?ID={{ID}}" class="p-3">Videos</a></li>
+            <li><a href="/audiobooks?ID={{ID}}" class="p-3">Audiobooks</a></li>
+            <li><a href="/musics?ID={{ID}}" class="p-3">Music</a></li>
+            <li><a href="/imgs?ID={{ID}}" class="p-3">Photos</a></li>
+            <li><a href="/screenshotes?ID={{ID}}" class="p-3">ScreenShotes</a></li>
+        </ul>
+    </nav>
+    <p>Your ID {{ID}}</p>
+    <p>Upload Files</p>
+    <form action="/writeaudio" method="POST" enctype="multipart/form-data">
+        <div class="mes">
+            <div class="col-5">
+                <div>
+                    <input type="file" name="ufile" multiple>
+                </div>
+                <div class="form-floating mb-3">
+                    <br>
+                    <input type="text" class="form-control" name="ID" value="{{ID}}" readonly>
+                    <label for="ID">Your ID</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <br>
+                    <input type="text" class="form-control" id="audionam" name="audionam">
+                    <label for="videonam">Audio Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <br>
+                    <input type="text" class="form-control" id="description" name="description">
+                    <label for="description">Description</label>
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+    <br>
+</body>
+</html>

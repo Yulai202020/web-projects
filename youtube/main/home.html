@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/files/stylemincss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <style>
+        .form-control{width: 50%;display: inherit;}
+    </style>
+    <title>SEGames Anonim Youtube</title>
+</head>
+<body>
+    <nav class="mb-4 d-flex justify-content-between">
+        <ul class="d-flex align-items-center">
+            <li><a id="0" href="/home?ID={{ID}}" class="navbar-brand">Home</a></li>
+            <li><a id="1" href="/top?ID={{ID}}" class="p-3">Top Videos</a></li>
+            <li><a id="2" href="/uploadfiles?ID={{ID}}" class="p-3">Upload Files</a></li>
+            <li><a id="3" href="/linksvideos?ID={{ID}}" class="p-3">All Links To Video</a></li>
+            <li><a id="4" href="/user/accaunt?ID={{ID}}" class="p-3">{{emailuser}}</a></li>
+            <li><a href="#search" class="p-3">Search :</a></li>
+            <form class="example" style="margin:auto;max-width:300px" action="/results" method="GET">
+                <div class="p-3">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input id="ID" name="ID" type="text" value="{{ID}}" readonly>
+                </div>
+            </form>
+            <li><a href="/user/logout" class="p-3">logout</a></li>
+        </ul>
+    </nav>
+    <p>Your ID {{ID}}</p>
+    {% for row in rows %}
+        <video width="400" height="300" controls preload="metadata">
+            <source src="/return/video?ID={{row[6]}}">
+        </video>
+        <div class="input-group mb-3">
+            <input class="form-control" type="text" value="Name : {{row[2]}}" readonly />
+            <input class="form-control" type="text" value="Likes : {{row[4]}}" readonly />
+            <input class="form-control" type="text" value="Author : {{row[1]}}" readonly />
+            <span class="input-group-text"><a href="/watch?ID={{row[6]}}&MYIDIN={{ID}}" class="link-info">To Video</a></span>
+        </div>
+        <br>
+    {% endfor %}
+</body>
+</html>

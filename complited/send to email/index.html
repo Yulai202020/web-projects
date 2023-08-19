@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Send Message</title>
+    <style>nav>ul>li>a {text-decoration: none;color: white;}nav>ul>li>a:hover {text-decoration: none;color: orange;}nav>ul>li>a.active {text-decoration: none;color: red;}.nav-link.active {text-decoration: none;color: red;}nav>ul>li {list-style: none;}nav {background-color: black;padding-top: 10px;}body {background-color: white;overflow-x: hidden;overflow-y: auto;}</style>
+</head>
+<body>
+    <nav class="mb-4 d-flex justify-content-between">
+        <ul class="d-flex align-items-center">
+            <li><a href="/" class="navbar-brand">Home</a></li>
+            <li><a href="/sendform" class="p-3">Send From</a></li>
+        </ul>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>from</th>
+                <th>to</th>
+                <th>subject</th>
+                <th>message</th>
+                <th>action</th>
+            </tr>
+        </thead>
+        {% for row in rows %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+                <td>
+                    <a href="/delete?id={{row[4]}}">delete</a>
+                    <a href="/view?id={{row[4]}}">view</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

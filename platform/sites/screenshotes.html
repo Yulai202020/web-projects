@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>SEGames Anonim Platform</title>
+    <style>nav>ul>li>a {text-decoration: none;color: white;}nav>ul>li>a:hover {text-decoration: none;color: orange;}nav>ul>li>a.active {text-decoration: none;color: red;}.nav-link.active {text-decoration: none;color: red;}nav>ul>li {list-style: none;}nav {background-color: black;padding-top: 10px;}body {background-color: white;overflow-x: hidden;overflow-y: auto;}</style>
+</head>
+<body>
+    <nav class="mb-4 d-flex justify-content-between">
+        <ul class="d-flex align-items-center">
+            <li><a id="0" href="/videos?ID={{ID}}" class="p-3">Videos</a></li>
+            <li><a id="1" href="/audiobooks?ID={{ID}}" class="p-3">Audiobooks</a></li>
+            <li><a id="2" href="/musics?ID={{ID}}" class="p-3">Music</a></li>
+            <li><a id="3" href="/imgs?ID={{ID}}" class="p-3">Photos</a></li>
+            <li><a id="4" href="/screenshotes?ID={{ID}}" class="p-3">ScreenShotes</a></li>
+        </ul>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <p>Your ID {{ID}}</p>
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Name</th>
+                <th>Discription</th>
+                <th>ID</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        {% for mes in mess %}
+            <tr>
+                <td>{{mes[0]}}</td>
+                <td>{{mes[1]}}</td>
+                <td>{{mes[2]}}</td>
+                <td><a href="/watchscreenshote?ID={{mes[2]}}&MYIDIN={{ID}}">/watchscreenshote?ID={{mes[2]}}&MYIDIN={{ID}}</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <script type="module">
+        var $elem = document.getElementById("4");
+        $elem.classList.add("active");
+    </script>
+    <a href="/uploadscreenshote?ID={{ID}}">Upload ScreenShote</a>
+</body>
+</html>
